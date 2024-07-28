@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Wandercult</title>
+    <link rel="stylesheet" href="loginStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="right">
+        <div class="banner">
+          <img src="assets/images/logoText.png" alt="" class="logoText" />
+          <p class="slogan">Discover your next adventure</p>
+        </div>
+        <p class="acc">Your accounts</p>
+        <div class="accounts">
+          <img src="assets/images/jacob.png" alt="" class="charlot" />
+          <img src="assets/images/charlot.png" alt="" class="jacob" />
+          <img src="assets/images/plus.png" alt="" class="plus" />
+        </div>
+      </div>
+      <div class="left">
+        <img src="assets/images/logo.png" alt="" class="logo" />
+        <form action="/login" method="post" class="login">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            class="email"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            class="password"
+            required
+          />
+          <% if (error) { %>
+          <p class="errorlogin"><%= error %></p>
+          <% } %>
+          <button class="btn1" type="submit">log in</button>
+          <div class="line"></div>
+          <p class="forgot">forgot password?</p>
+        </form>
+        <p class="signup">
+          Don't have an account?
+          <a href="/signup" class="signin">Sign up</a>
+        </p>
+      </div>
+    </div>
+    <div class="languages">
+      <ul class="list">
+        <li class="l1">English (UK)</li>
+        <li class="l2">Français (France)</li>
+        <li class="l3">Arabic</li>
+        <li class="l4">Espagnol (España)</li>
+        <li class="l5">Italiano</li>
+        <li class="l6">Deutsch</li>
+        <li class="l7">Portuguese</li>
+      </ul>
+    </div>
+  </body>
+</html>
